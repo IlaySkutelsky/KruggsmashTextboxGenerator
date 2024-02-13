@@ -1,11 +1,14 @@
 let width = 600
 let height = 300
 
-const canvas = document.querySelector("canvas");
-const ctx = canvas.getContext("2d");
+let canvas
+let ctx
 
 function draw(counter) {
     try {
+        canvas = document.querySelector("canvas");
+        ctx = canvas.getContext("2d");
+
         width = document.querySelector('input#canvas-width').value
         height = document.querySelector('input#canvas-height').value
         canvas.width = width; 
