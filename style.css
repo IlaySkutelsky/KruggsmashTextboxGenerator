@@ -1,6 +1,6 @@
 @font-face {
   font-family: PixelEmulator;
-  src: url('/assets/Pixel\ Emulator.otf');
+  src: url('./assets/Pixel\ Emulator.otf');
 }
 
 * {
