@@ -1,0 +1,64 @@
+@font-face {
+  font-family: PixelEmulator;
+  src: url('/assets/Pixel\ Emulator.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 3rem;
+  background-color: turquoise;
+  font-family: PixelEmulator;
+}
+
+.controls {
+  padding: 1rem;
+  border: 1px dashed;
+}
+
+.controls textarea.text-input {
+  font-family: PixelEmulator;
+}
+
+.controls .col {
+  padding: 0.5rem;
+  border: 1px dashed;
+}
+
+.controls .col input {
+  flex-grow: 1;
+  padding: 2px 5px;
+}
+
+canvas {
+  align-self: flex-start;
+  margin-block: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .textbox {
+  padding: 1rem;
+  width: fit-content;
+  font-family: PixelEmulator;
+  background: #1c1c1c;
+  color: white;
+  border-image: url("assets/animalinfopanel\(1\).png") 36 / 9px;
+} */

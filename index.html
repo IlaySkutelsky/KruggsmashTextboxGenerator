@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <title>Kruggsmash Textbox generator</title>
+</head>
+<body class="col">
+  <!-- <div class="textbox" contenteditable="true">test</div> -->
+  <div class="controls row">
+    <div class="col">
+      <textarea class="text-input" cols="50" rows="15" oninput="draw()">Hello, you bearded bastards!</textarea>
+    </div>
+    <div class="col">
+        <label class="row">
+          Canvas width:
+        <input type="number" id="canvas-width" value="600" oninput="draw()">
+      </label>
+      <label class="row">
+        Canvas height:
+        <input type="number" id="canvas-height" value="300" oninput="draw()">
+      </label>
+    </div>
+    <div class="col">
+      <label class="row">
+        Font size:
+        <input type="number" id="font-size" value="16" oninput="draw()">
+      </label>
+      <label class="row">
+        Text X offset:
+        <input type="number" id="text-x-offset" value="10" oninput="draw()">
+      </label>
+      <label class="row">
+        Text Y offset:
+        <input type="number" id="text-y-offset" value="30" oninput="draw()">
+      </label>
+    </div>
+  </div>
+  <canvas width="300" height="150"></canvas>
+  <img class="corner-tile hidden" src="assets/corner_tile.png" onload="handleImageLoad()" alt="">
+  <img class="corner-tile2 hidden" src="assets/corner_tile2.png" onload="handleImageLoad()" alt="">
+  <img class="corner-tile3 hidden" src="assets/corner_tile3.png" onload="handleImageLoad()" alt="">
+  <img class="corner-tile4 hidden" src="assets/corner_tile4.png" onload="handleImageLoad()" alt="">
+
+</body>
+</html>
